@@ -7,5 +7,5 @@ pub fn run() {
         let insert = map.entry(num).or_insert(0);
         *insert += 1;
     }
-    println!("{:?}", map);
+    println!("Number that appears the most times is {:?}", map.iter().max_by_key(|(_, &value)| value));
 }
