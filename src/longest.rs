@@ -1,3 +1,4 @@
+#[allow(non_snake_case)]
 pub fn run() {
     let words = "fishes,sam,gollum,sauron,frodo,balrog".split(",");
     let mut listOfWords: Vec<&str> = vec![];
@@ -19,5 +20,5 @@ pub fn run() {
         }
     }
 
-    println!("{:?}", answer);
+    println!("{}", answer.join(",").to_lowercase());
 }
