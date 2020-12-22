@@ -5,6 +5,7 @@ mod structs;
 mod numberfreq;
 mod longest;
 mod checktheexam;
+mod slices;
 fn main() {
     oddoreven::run();
     sumlist::run();
@@ -12,4 +13,5 @@ fn main() {
     numberfreq::run();
     longest::run();
     checktheexam::run(&["a", "a", "b", "b"], &["a", "c", "b", "d"]);
+    slices::run(&[1, 2, 3, 4, 34543, 21, 90809]);
 }
