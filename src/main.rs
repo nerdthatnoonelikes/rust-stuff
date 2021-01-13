@@ -8,6 +8,7 @@ mod checktheexam;
 mod slices;
 mod primes;
 mod fibs;
+mod generics;
 fn main() {
     oddoreven::run();
     sumlist::run();
@@ -18,4 +19,5 @@ fn main() {
     slices::run(&[1, 2, 3, 4, 34543, 21, 90809]);
     primes::run();
     fibs::run();
+    println!("{}", generics::run(&vec!['a', 'z', 'y', 'c', 'h', 'i']));
 }
