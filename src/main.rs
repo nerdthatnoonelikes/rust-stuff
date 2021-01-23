@@ -9,6 +9,7 @@ mod slices;
 mod primes;
 mod fibs;
 mod generics;
+mod bubblesort;
 fn main() {
     oddoreven::run();
     sumlist::run();
@@ -20,4 +21,5 @@ fn main() {
     primes::run();
     fibs::run();
     println!("{}", generics::run(&vec!['a', 'z', 'y', 'c', 'h', 'i']));
+    bubblesort::run(&mut vec![64, 34, 25, 12, 22, 11, 90])
 }
